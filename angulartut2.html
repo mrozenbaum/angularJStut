@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="app2">
+  <head>
+    <title>AngularJS Tutorial 2</title>
+  </head>
+  <body>
+    <!-- You can clreate multipule views that use the same controller -->
+    <h4 ng-controller="ctrl1">First Random Number : {{randomNum1}}</h4>
+    <h4 ng-controller="ctrl1">Second Random Number : {{randomNum2}}</h4>
+
+    <!-- A page can contain multiple controllers -->
+    <h4 ng-controller="badCtrl"> Im feeling : {{bad}}</h4>
+    
+    <h4 ng-controller="goodCtrl"> Im feeling : {{good}}</h4>
+
+
+
+
+
+
+    <!-- Load the AngularJS library -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <!-- Load the JS Module -->
+    <script src="js/exam2.js"></script>
+  </body>
+</html>
