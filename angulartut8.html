@@ -54,12 +54,22 @@
         <li ng-repeat="item in randArray | limitTo:3">{{item}}</li>
       </ul>
       
-
+      <!-- Custom Filter
+        Different unicode characters are returned based on of item.rain has the value of true or false -->
+      <p>
+        <ul>
+          <li ng-repeat="item in weather">
+            {{item.day + " : "}} {{item.rain | raining}}
+          </li>
+        </ul>
+      </p>
     </div>
 
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
     <script src="js/exam8.js"></script>
+    <!-- Needed for custom filter -->
+    <script src="js/filters.js"></script>
   </body>
   </html>

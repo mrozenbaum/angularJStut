@@ -1,4 +1,5 @@
-var app8 = angular.module('app8', []);
+// Register our custom filter as a dependency
+var app8 = angular.module('app8', ['weatherFilters']);
 
 app8.controller('mainCtrl', function($scope) {
 
